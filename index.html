@@ -3,9 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bytespot Limited | Enterprise Systems Architecture & Financial Infrastructure Consulting</title>
-    <meta name="description" content="Bytespot Limited delivers executive software architecture, multi-country payment switch integrations, and financial engine optimization led by senior principal practitioners.">
-    <!-- Tailwind CSS CDN -->
+    <title>Bytespot Limited | Enterprise Software Architecture & Engineering</title>
+    <meta name="description" content="Bytespot Limited delivers enterprise software solutions backed by senior practitioners with experience in Fintech, FMCG, Logistics, and AgriTech across Africa.">    <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -29,25 +28,59 @@
 <body class="bg-slate-950 text-slate-100 font-sans antialiased selection:bg-brand-600 selection:text-white">
 
     <!-- Header / Navigation -->
-    <header class="fixed top-0 w-full z-50 bg-slate-950/80 backdrop-blur-md border-b border-slate-800">
-        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <a href="#" class="flex items-center gap-3 group">
-                <div class="w-10 h-10 bg-brand-600 rounded-lg flex items-center justify-center text-white font-bold text-xl tracking-wider shadow-lg shadow-brand-600/30 group-hover:bg-brand-800 transition">
-                    B
-                </div>
-                <div class="flex flex-col">
-                    <span class="text-xl font-bold tracking-tight text-white group-hover:text-brand-600 transition">BYTESPOT</span>
-                    <span class="text-xs tracking-widest text-slate-400 uppercase font-semibold">Limited</span>
-                </div>
-            </a>
+    <header class="sticky top-0 z-50 bg-white/90 backdrop-blur-md border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             
-            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
-                <a href="#services" class="hover:text-white transition">Services</a>
-                <a href="#leadership-track-record" class="hover:text-white transition">Principal Experience</a>
-                <a href="#stack" class="hover:text-white transition">Tech Stack</a>
-                <a href="#about" class="hover:text-white transition">About</a>
-                <a href="#contact" class="bg-brand-600 hover:bg-brand-800 text-white px-5 py-2.5 rounded-lg font-semibold transition shadow-md shadow-brand-600/20">Get in Touch</a>
+            <!-- High-Contrast Brand Logo (Sized Up for Visibility) -->
+            <a href="#" class="flex items-center group">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 540 120" class="h-12 sm:h-14 w-auto">
+                    <defs>
+                        <linearGradient id="code-cyan" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#38bdf8"/>
+                            <stop offset="100%" stop-color="#0284c7"/>
+                        </linearGradient>
+                        <linearGradient id="code-indigo" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#818cf8"/>
+                            <stop offset="100%" stop-color="#4f46e5"/>
+                        </linearGradient>
+                        <linearGradient id="spot-emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+                            <stop offset="0%" stop-color="#34d399"/>
+                            <stop offset="100%" stop-color="#059669"/>
+                        </linearGradient>
+                        <filter id="node-glow" x="-30%" y="-30%" width="160%" height="160%">
+                            <feGaussianBlur stdDeviation="5" result="blur"/>
+                            <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+                        </filter>
+                    </defs>
+                    <g transform="translate(10, 10)">
+                        <rect x="0" y="0" width="100" height="100" rx="22" fill="#0f172a" stroke="#1e293b" stroke-width="2"/>
+                        <path d="M 34 26 L 22 50 L 34 74" fill="none" stroke="url(#code-cyan)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M 34 26 H 58 C 70 26, 78 33, 78 42 C 78 50, 70 50, 58 50 H 34" fill="none" stroke="url(#code-indigo)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <path d="M 34 50 H 60 C 74 50, 82 58, 82 66 C 82 74, 74 74, 60 74 H 34" fill="none" stroke="url(#code-cyan)" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+                        <circle cx="50" cy="50" r="7" fill="url(#spot-emerald)" filter="url(#node-glow)"/>
+                        <circle cx="50" cy="50" r="3.5" fill="#ffffff"/>
+                    </g>
+                    <!-- Dark text for light background readability -->
+                    <text x="132" y="60" fill="#0f172a" font-family="system-ui, -apple-system, sans-serif" font-weight="800" font-size="38" letter-spacing="2.5">BYTESPOT</text>
+                    <text x="134" y="84" fill="#0284c7" font-family="system-ui, -apple-system, sans-serif" font-weight="600" font-size="11" letter-spacing="5">SOFTWARE &amp; SYSTEMS</text>
+                    <rect x="424" y="40" width="4" height="22" fill="#059669" rx="2" opacity="0.9"/>
+                </svg>
+            </a>
+
+            <!-- Navigation Links -->
+            <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold text-slate-700">
+                <a href="#services" class="hover:text-sky-600 transition-colors">Services</a>
+                <a href="#solutions" class="hover:text-sky-600 transition-colors">Solutions</a>
+                <a href="#architecture" class="hover:text-sky-600 transition-colors">Architecture</a>
+                <a href="#contact" class="hover:text-sky-600 transition-colors">Contact</a>
             </nav>
+
+            <!-- CTA Button -->
+            <div class="hidden sm:flex items-center">
+                <a href="mailto:info@bytespot.org?subject=Inquiry%20-%20Bytespot%20Limited" class="bg-slate-900 hover:bg-sky-600 text-white px-5 py-2.5 rounded-xl font-medium text-sm transition-all shadow-sm hover:shadow-md">
+                    Schedule Consultation
+                </a>
+            </div>
         </div>
     </header>
 
@@ -55,16 +88,15 @@
     <section class="pt-36 pb-24 px-6 max-w-7xl mx-auto flex flex-col items-start justify-center min-h-[85vh]">
         <div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-brand-950 border border-brand-800/60 text-brand-600 text-xs font-semibold uppercase tracking-wider mb-6">
             <span class="w-2 h-2 rounded-full bg-brand-600 animate-pulse"></span>
-            Enterprise Software Architecture &amp; Financial Systems Consultancy
+            Enterprise Software Architecture &amp; Engineering Consultancy
         </div>
         
         <h1 class="text-4xl sm:text-6xl lg:text-7xl font-extrabold tracking-tight text-white leading-[1.1] mb-6 max-w-5xl">
-            Architecting Resilient Infrastructure for High-Throughput Commerce.
+            Architecting Software Solutions that Empower Businesses and Markets
         </h1>
         
         <p class="text-lg sm:text-xl text-slate-400 max-w-3xl font-normal leading-relaxed mb-10">
-            Bytespot Limited delivers executive backend engineering consultancy, multi-country payment integrations, and distributed system optimization. Founded by senior software architects with proven expertise scaling systems processing billions in daily transactions across regional markets[cite: 4, 5].
-        </p>
+Bytespot Limited delivers enteprise software solutions, backed by senior software talent with experience in Fintech, FMCG, Logistics, and AgriTech across Africa.
 
         <div class="flex flex-col sm:flex-row gap-4 w-full sm:w-auto">
             <a href="#contact" class="inline-flex items-center justify-center gap-2 bg-brand-600 hover:bg-brand-800 text-white px-8 py-4 rounded-xl font-semibold text-base transition shadow-lg shadow-brand-600/25">
@@ -72,7 +104,7 @@
                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
             </a>
             <a href="#leadership-track-record" class="inline-flex items-center justify-center gap-2 bg-slate-900 hover:bg-slate-800 border border-slate-800 text-slate-300 hover:text-white px-8 py-4 rounded-xl font-semibold text-base transition">
-                View Principal Engineering Track Record
+                View Software Engineering Track Record
             </a>
         </div>
 
@@ -80,19 +112,19 @@
         <div class="grid grid-cols-2 md:grid-cols-4 gap-6 w-full mt-20 pt-12 border-t border-slate-800/80">
             <div>
                 <p class="text-3xl sm:text-4xl font-extrabold text-white">8+ Years</p>
-                <p class="text-sm text-slate-400 mt-1">Principal Systems Engineering Experience[cite: 4]</p>
+                <p class="text-sm text-slate-400 mt-1">Software Engineering Experience</p>
             </div>
             <div>
                 <p class="text-3xl sm:text-4xl font-extrabold text-white">KES 4B+</p>
-                <p class="text-sm text-slate-400 mt-1">Daily Settlement Scale Experience[cite: 4]</p>
+                <p class="text-sm text-slate-400 mt-1">Daily Settlement Scale Experience</p>
             </div>
             <div>
                 <p class="text-3xl sm:text-4xl font-extrabold text-white">5 Countries</p>
-                <p class="text-sm text-slate-400 mt-1">Cross-Border Payment Implementations[cite: 4]</p>
+                <p class="text-sm text-slate-400 mt-1">Cross-Border Payment Implementations</p>
             </div>
             <div>
                 <p class="text-3xl sm:text-4xl font-extrabold text-white">63%</p>
-                <p class="text-sm text-slate-400 mt-1">Average CI/CD & Pipeline Optimization Gain[cite: 5]</p>
+                <p class="text-sm text-slate-400 mt-1">Average CI/CD & Pipeline Optimization Gain</p>
             </div>
         </div>
     </section>
@@ -114,12 +146,12 @@
                         </div>
                         <h4 class="text-xl font-bold text-white mb-3">Settlement & Reconciliation Architecture</h4>
                         <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                            Designing high-throughput reconciliation, batching strategies, and ledger engines to drastically compress processing windows and reduce operational compute costs[cite: 5].
+                            Designing high-throughput reconciliation, batching strategies, and ledger engines to drastically compress processing windows and reduce operational compute costs.
                         </p>
                     </div>
                     <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-900 pt-4">
-                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Batch Processing & Optimization[cite: 5]</li>
-                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Automated Ledger Reconciliation[cite: 6]</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Batch Processing & Optimization</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Automated Ledger Reconciliation</li>
                     </ul>
                 </div>
 
@@ -131,12 +163,12 @@
                         </div>
                         <h4 class="text-xl font-bold text-white mb-3">Multi-Country PSP & Payment Switches</h4>
                         <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                            Architecting resilient API switches connecting mobile money networks, card processors, local commercial banks, and digital lending infrastructure[cite: 5, 6].
+                            Architecting resilient API switches connecting mobile money networks, card processors, local commercial banks, and digital lending infrastructure.
                         </p>
                     </div>
                     <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-900 pt-4">
-                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Cross-Border Switch Middleware[cite: 5]</li>
-                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Integration Sandboxes & Mocking[cite: 6]</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Cross-Border Switch Middleware</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Integration Sandboxes & Mocking</li>
                     </ul>
                 </div>
 
@@ -148,12 +180,12 @@
                         </div>
                         <h4 class="text-xl font-bold text-white mb-3">ERP & Core Banking Middleware</h4>
                         <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                            Connecting enterprise finance apps to core banking and internal wallets while enforcing strict maker-checker controls, OAuth2 authentication, and audit trails[cite: 5, 6].
+                            Connecting enterprise finance apps to core banking and internal wallets while enforcing strict maker-checker controls, OAuth2 authentication, and audit trails.
                         </p>
                     </div>
                     <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-900 pt-4">
-                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Maker-Checker Workflow Implementation[cite: 5, 6]</li>
-                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Core Banking Migration Support[cite: 5]</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Maker-Checker Workflow Implementation</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Core Banking Migration Support</li>
                     </ul>
                 </div>
 
@@ -165,12 +197,12 @@
                         </div>
                         <h4 class="text-xl font-bold text-white mb-3">Distributed Workflows & Messaging</h4>
                         <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                            Implementing event-driven microservices using Apache Kafka, RabbitMQ, and Temporal workflow orchestration for long-running, stateful transactions[cite: 4, 5].
+                            Implementing event-driven microservices using Apache Kafka, RabbitMQ, and Temporal workflow orchestration for long-running, stateful transactions.
                         </p>
                     </div>
                     <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-900 pt-4">
-                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Temporal Orchestration Engine Adoption[cite: 5]</li>
-                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Event-Driven Streaming Architecture[cite: 4]</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Temporal Orchestration Engine Adoption</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Event-Driven Streaming Architecture</li>
                     </ul>
                 </div>
 
@@ -182,12 +214,12 @@
                         </div>
                         <h4 class="text-xl font-bold text-white mb-3">High-Concurrency API Design</h4>
                         <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                            Building production-grade Java (Spring Boot, Micronaut) and Python backends with gRPC, REST, and GraphQL interfaces, backed by rigorous test containers[cite: 4].
+                            Building production-grade Java (Spring Boot, Micronaut) and Python backends with gRPC, REST, and GraphQL interfaces, backed by rigorous test containers.
                         </p>
                     </div>
                     <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-900 pt-4">
-                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Spring Boot &amp; Micronaut Frameworks[cite: 4]</li>
-                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> JUnit, Mockito, Testcontainers[cite: 4]</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Spring Boot &amp; Micronaut Frameworks</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> JUnit, Mockito, Testcontainers</li>
                     </ul>
                 </div>
 
@@ -199,12 +231,12 @@
                         </div>
                         <h4 class="text-xl font-bold text-white mb-3">DevOps & System Observability</h4>
                         <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                            CI/CD execution tuning (GitLab, GitHub Actions, Jenkins), Docker/Kubernetes containerization, GCP, and centralized ELK log monitoring[cite: 4, 5, 6].
+                            CI/CD execution tuning (GitLab, GitHub Actions, Jenkins), Docker/Kubernetes containerization, GCP, and centralized ELK log monitoring.
                         </p>
                     </div>
                     <ul class="text-xs text-slate-300 space-y-2 border-t border-slate-900 pt-4">
-                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> CI/CD Pipeline Acceleration[cite: 5]</li>
-                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Elastic Stack (ELK) Observability[cite: 6]</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> CI/CD Pipeline Acceleration</li>
+                        <li class="flex items-center gap-2"><span class="text-brand-600">✓</span> Elastic Stack (ELK) Observability</li>
                     </ul>
                 </div>
             </div>
@@ -215,9 +247,9 @@
     <section id="leadership-track-record" class="py-24 px-6 max-w-7xl mx-auto">
         <div class="mb-12">
             <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2">Proven Impact</h2>
-            <h3 class="text-3xl sm:text-4xl font-bold text-white">Principal Engineering Track Record</h3>
+            <h3 class="text-3xl sm:text-4xl font-bold text-white">Software Engineering Track Record</h3>
             <p class="text-slate-400 text-sm mt-3 max-w-3xl">
-                The technical case studies below reflect high-scale architectural solutions engineered by Bytespot Limited's principal leadership during executive and senior engineering tenures across regional fintechs and enterprise platforms[cite: 4, 5, 6].
+                The technical case studies below reflect high-scale architectural solutions engineered by Bytespot Limited's seniour leadership during executive and senior engineering tenures across regional fintechs and enterprise platforms.
             </p>
         </div>
 
@@ -229,10 +261,10 @@
                         <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider">Fintech Settlement Engine Architecture</span>
                         <h4 class="text-2xl font-bold text-white mt-1">Daily KES 4B+ Merchant Payout Pipeline</h4>
                     </div>
-                    <span class="text-xs font-mono bg-slate-800 text-slate-300 px-3 py-1.5 rounded-md self-start md:self-auto">5 Countries • Fintech Companies[cite: 4]</span>
+                    <span class="text-xs font-mono bg-slate-800 text-slate-300 px-3 py-1.5 rounded-md self-start md:self-auto">5 Countries • Fintech Companies</span>
                 </div>
                 <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                    <strong>Architectural Highlight:</strong> Refactored core merchant settlement processing and implemented an optimized batching strategy[cite: 5]. Reduced daily settlement execution windows from 11 hours down to 3 hours, keeping regional operations running smoothly and drastically cutting cloud computation overhead[cite: 5]. Optimized integration test runners in CI/CD pipelines from ~13 minutes to 4 minutes[cite: 5].
+                    <strong>Architectural Highlight:</strong> Refactored core merchant settlement processing and implemented an optimized batching strategy. Reduced daily settlement execution windows from 11 hours down to 3 hours, keeping regional operations running smoothly and drastically cutting cloud computation overhead.
                 </p>
                 <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
                     <span class="bg-slate-950 px-2.5 py-1 rounded border border-slate-800">Java</span>
@@ -250,10 +282,10 @@
                         <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider">Pan-African FMCG Payment Switch</span>
                         <h4 class="text-2xl font-bold text-white mt-1">Multi-Region Payment Switch & ERP Integration</h4>
                     </div>
-                    <span class="text-xs font-mono bg-slate-800 text-slate-300 px-3 py-1.5 rounded-md self-start md:self-auto">KES 1B+ Monthly • Regional E-Commerce Platforms[cite: 5]</span>
+                    <span class="text-xs font-mono bg-slate-800 text-slate-300 px-3 py-1.5 rounded-md self-start md:self-auto">KES 1B+ Monthly • Regional E-Commerce Platforms</span>
                 </div>
                 <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                    <strong>Architectural Highlight:</strong> Led backend API design and ERP integration across 4 countries[cite: 5]. Integrated internal payment wallets with external payment networks and introduced Temporal workflow orchestrations to accelerate partner onboarding cycles by ~20%[cite: 5].
+                    <strong>Architectural Highlight:</strong> Led backend API design and ERP integration across 4 countries. Integrated internal payment wallets with external payment networks and introduced Temporal workflow orchestrations to accelerate partner onboarding cycles by ~20%.
                 </p>
                 <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
                     <span class="bg-slate-950 px-2.5 py-1 rounded border border-slate-800">Temporal Workflow</span>
@@ -270,10 +302,10 @@
                         <span class="text-xs font-semibold text-brand-600 uppercase tracking-wider">Public Infrastructure & Transport</span>
                         <h4 class="text-2xl font-bold text-white mt-1">Transit Switch API & Centralized Monitoring</h4>
                     </div>
-                    <span class="text-xs font-mono bg-slate-800 text-slate-300 px-3 py-1.5 rounded-md self-start md:self-auto">Civic Infrastructure • Public Transport & Enterprise Logistics[cite: 5, 6]</span>
+                    <span class="text-xs font-mono bg-slate-800 text-slate-300 px-3 py-1.5 rounded-md self-start md:self-auto">Civic Infrastructure • Public Transport & Enterprise Logistics</span>
                 </div>
                 <p class="text-slate-400 text-sm leading-relaxed mb-6">
-                    <strong>Architectural Highlight:</strong> Designed REST API switch mechanisms connecting public transit ticketing systems[cite: 5]. Maintained centralized weighbridge management across 10 regional stations with Elastic stack (ELK) logging and maker-checker administrative security controls[cite: 6].
+                    <strong>Architectural Highlight:</strong> Designed REST API switch mechanisms connecting public transit ticketing systems. Maintained centralized weighbridge management across 10 regional stations with Elastic stack (ELK) logging and maker-checker administrative security controls.
                 </p>
                 <div class="flex flex-wrap gap-2 text-xs font-mono text-slate-300">
                     <span class="bg-slate-950 px-2.5 py-1 rounded border border-slate-800">REST APIs</span>
@@ -290,32 +322,32 @@
         <div class="max-w-7xl mx-auto">
             <div class="mb-16">
                 <h2 class="text-xs font-bold uppercase tracking-widest text-brand-600 mb-2">Technology Ecosystem</h2>
-                <h3 class="text-3xl sm:text-4xl font-bold text-white">Engineered with Production-Proven Tools[cite: 4]</h3>
+                <h3 class="text-3xl sm:text-4xl font-bold text-white">Engineered with Production-Proven Tools</h3>
             </div>
 
             <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
                 <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-center">
-                    <p class="text-xs text-slate-500 font-semibold uppercase mb-1">Languages[cite: 4]</p>
+                    <p class="text-xs text-slate-500 font-semibold uppercase mb-1">Languages</p>
                     <p class="text-slate-200 font-bold">Java / Python / JS</p>
                 </div>
                 <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-center">
-                    <p class="text-xs text-slate-500 font-semibold uppercase mb-1">Frameworks[cite: 4]</p>
+                    <p class="text-xs text-slate-500 font-semibold uppercase mb-1">Frameworks</p>
                     <p class="text-slate-200 font-bold">Spring Boot / Micronaut</p>
                 </div>
                 <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-center">
-                    <p class="text-xs text-slate-500 font-semibold uppercase mb-1">Streaming[cite: 4]</p>
+                    <p class="text-xs text-slate-500 font-semibold uppercase mb-1">Streaming</p>
                     <p class="text-slate-200 font-bold">Kafka / RabbitMQ</p>
                 </div>
                 <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-center">
-                    <p class="text-xs text-slate-500 font-semibold uppercase mb-1">Orchestration[cite: 4, 5]</p>
+                    <p class="text-xs text-slate-500 font-semibold uppercase mb-1">Orchestration</p>
                     <p class="text-slate-200 font-bold">Temporal Engine</p>
                 </div>
                 <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-center">
-                    <p class="text-xs text-slate-500 font-semibold uppercase mb-1">Databases[cite: 4]</p>
+                    <p class="text-xs text-slate-500 font-semibold uppercase mb-1">Databases</p>
                     <p class="text-slate-200 font-bold">Postgres / MongoDB / MySQL</p>
                 </div>
                 <div class="bg-slate-950 p-4 rounded-xl border border-slate-800 text-center">
-                    <p class="text-xs text-slate-500 font-semibold uppercase mb-1">DevOps[cite: 4]</p>
+                    <p class="text-xs text-slate-500 font-semibold uppercase mb-1">DevOps</p>
                     <p class="text-slate-200 font-bold">Docker / K8s / GCP</p>
                 </div>
             </div>
@@ -335,16 +367,6 @@
                     We partner with enterprise organizations, financial institutions, and growth-stage ventures seeking high-reliability engineering, strict audit compliance, and technical execution.
                 </p>
 
-                <div class="flex items-center gap-4 p-4 rounded-xl bg-slate-900/60 border border-slate-800">
-                    <div class="w-12 h-12 rounded-full bg-brand-800 text-white font-bold flex items-center justify-center text-lg">
-                        EM
-                    </div>
-                    <div>
-                        <h4 class="text-white font-bold text-base">Elijah Mbaru</h4>
-                        <p class="text-slate-400 text-xs">Principal Architect &amp; Lead Consultant</p>
-                        <p class="text-slate-500 text-xs mt-0.5">B.Sc. Computer Science (Chuka University)[cite: 4] • 8+ Years Engineering Experience[cite: 4]</p>
-                    </div>
-                </div>
             </div>
 
             <div class="lg:col-span-5 bg-slate-900 p-8 rounded-2xl border border-slate-800">
@@ -352,15 +374,15 @@
                 <ul class="space-y-4 text-sm text-slate-300">
                     <li class="flex items-start gap-3">
                         <span class="text-brand-600 font-bold">✓</span>
-                        <span><strong>Principal-Led Delivery:</strong> Direct engagement with senior architects who have built KES 4B+ daily settlement systems[cite: 4, 5].</span>
+                        <span><strong>Expert-Led Delivery:</strong> Direct engagement with senior architects who have built KES 4B+ daily settlement systems.</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="text-brand-600 font-bold">✓</span>
-                        <span><strong>Strict Compliance &amp; Auditing:</strong> Deep experience with maker-checker security, ledger reconciliation, and core banking integrations[cite: 5, 6].</span>
+                        <span><strong>Strict Compliance &amp; Auditing:</strong> Deep experience with maker-checker security, ledger reconciliation, and core banking integrations.</span>
                     </li>
                     <li class="flex items-start gap-3">
                         <span class="text-brand-600 font-bold">✓</span>
-                        <span><strong>Accelerated Integration:</strong> Reusable architectural blueprints for African payment networks cut onboarding time by ~20%[cite: 5].</span>
+                        <span><strong>Accelerated Integration:</strong> Reusable architectural blueprints for African payment networks cut onboarding time by ~20%.</span>
                     </li>
                 </ul>
             </div>
@@ -392,7 +414,7 @@
                     </div>
                     <div>
                         <p class="text-xs uppercase text-slate-500 font-semibold mb-1">Location</p>
-                        <p class="text-white font-bold">Nairobi, Kenya[cite: 4]</p>
+                        <p class="text-white font-bold">Nairobi, Kenya</p>
                     </div>
                 </div>
                 
@@ -411,7 +433,6 @@
         <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
             <p>© 2026 Bytespot Limited. All rights reserved.</p>
             <div class="flex gap-6">
-                <a href="https://www.linkedin.com/in/elijah-muraya/" target="_blank" rel="noopener noreferrer" class="hover:text-slate-300 transition">LinkedIn</a>
                 <a href="mailto:info@bytespot.org" class="hover:text-slate-300 transition">Email</a>
                 <a href="#" class="hover:text-slate-300 transition">bytespot.org</a>
             </div>
